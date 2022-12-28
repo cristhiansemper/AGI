@@ -1,0 +1,72 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="es">
+	<head>
+		<MainHead title="Nosotros | Perú" description="Acerca de AGI" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>Acerca de AGI</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="/assets/agi-about.png"
+				/>
+			</div>
+			<div class="bio wrapper">
+				
+				<p>
+					AGI es un fabricante líder de productos físicos y móviles 
+					y equipos móviles de manipulación y almacenamiento de productos a granel.
+					La gama de productos incluye transportadores de tornillo
+					y sinfines (mecánicos e hidráulicos), transportadores 
+					y cintas transportadoras cerradas, silos, sistemas de aireación 
+					silos, sistemas de aireación, secadoras de grano 
+					ascensores, máquinas de limpieza y estructuras metálicas.
+				</p>
+				<p>
+					AGI cuenta con numerosas divisiones de producción en todo el mundo 
+					y marcas mundialmente reconocidas en los sectores 
+					en los sectores industrial y agrícola, donde en algunos casos 
+					más de 160 años de experiencia en el mercado.
+				</p>
+				<p>
+					Para fortalecer las relaciones y fidelizar a los clientes, 
+					AGI trata de identificar las distintas necesidades y desarrollar
+					desarrollar soluciones personalizadas. Creemos que 
+					atención al cliente, junto con la calidad y la tecnología. 
+					aplicado a nuestros productos, es el diferencial a 
+					garantizar la confianza y seriedad que exige el mercado.
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>

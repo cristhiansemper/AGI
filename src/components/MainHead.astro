@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+const {
+	title="Infraestructura para alimentos global | AGI",
+	description="AGI: Soluciones industriales a medida"
+} = Astro.props;
+
+//https://www.aggrowth.com/es-ar
+//
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap"
+	rel="stylesheet"
+/>
+
